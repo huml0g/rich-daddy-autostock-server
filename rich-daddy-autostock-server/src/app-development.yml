@@ -1,0 +1,25 @@
+server:
+  hostname: 127.0.0.1
+  port: 4300
+
+logger:
+  level: debug
+  json: false
+
+jwt:
+  expiresIn: 30m
+  algorithm: HS256
+  registered:
+    issuer: local
+    subject: local-accesstoken
+    audience: local-user
+
+mongodb:
+  url: mongodb://daddy:daddy1234@175.121.122.24/richdaddystock
+  dbName: richdaddystock
+  options:
+    useNewUrlParser: true
+    useUnifiedTopology: true
+    connectTimeoutMS: 20000
+    socketTimeoutMS: 20000
+    serverSelectionTimeoutMS: 20000

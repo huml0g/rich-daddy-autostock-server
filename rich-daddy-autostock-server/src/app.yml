@@ -1,0 +1,4 @@
+appName: rich-daddy-autostock
+
+bcrypt:
+  saltRounds: 10

@@ -1,0 +1,17 @@
+{
+  "apps": [{
+    "name": "rich-daddy-autostock",
+    "script": "app.js",
+    "watch": true,
+    "env_dev": {
+      "NODE_ENV": "development",
+      "API_PORT": 4300
+    },
+    "env_prod": {
+      "NODE_ENV": "production",
+      "API_PORT": 4300
+    },
+    "exec_mode": "cluster",
+    "instances": 2
+  }]
+}
